@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+	<body >
+		<form action="adduser.php" method="post">
+		    <label>LOGIN:<br></label>
+		    <input name="login" type="text" size="15" minlength="5" maxlength="12" placeholder=" " required ><span class="form__error">Login is incorrect</span><br>
+		    <label>PASSWORD:<br></label>
+		    <input name="pass" type="password" size="15" maxlength="30" required minlength="6" 
+		      autocomplete="off"><span class="form__error">Password should be atleast 6 chars on and look like Password123</span><br>
+		    <label>EMAIL:<br></label>
+		    <input name="email" type="email" size="15" maxlength="25" placeholder=" " required><span class="form__error">Here sould be email like example@site.com</span><br>
+		    <label>FULL NAME:<br></label>
+		    <input name="fullname" type="text" size="15" maxlength="30" placeholder=" " pattern="/(^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$)/"><br><br>
+		    <input type="submit" name="submit" value="Sign in" class="subms">
+		</form> 
+
+		<!-- pattern="/^[A-Z]{1}[a-z]{4,}[0-9]{3,}$/gm" -->
+	</body>
+</html>
